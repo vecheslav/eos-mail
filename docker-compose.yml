@@ -1,0 +1,26 @@
+version: "3.7"
+
+services:
+  redis:
+    image: "redis:alpine"
+    restart: always
+    ports:
+      - "6379:6379"
+#  mail:
+#    build:
+#      context: .
+#      dockerfile: Dockerfile
+#    volumes:
+#      - .:/app
+#      - /app/node_modules
+#    command: yarn start
+#    environment:
+#      DEBUG: proxy
+#      REDIS_URL: redis://redis:6379
+#      PORT: 4000
+#    ports:
+#      - "4000:4000"
+#    links:
+#      - redis
+#    depends_on:
+#      - redis
